@@ -1,7 +1,7 @@
 package com.grule.test.groovy
 
 /**
- * Created by  on 2017/8/14.
+ * Created on 2018/03/05
  */
 
 regelApplication = new GroovyActionScript();

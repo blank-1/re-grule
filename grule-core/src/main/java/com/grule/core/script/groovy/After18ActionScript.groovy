@@ -3,7 +3,7 @@ package com.grule.core.script.groovy
 import com.grule.core.context.Context;
 
 /**
- * Created by  on 2017/8/15.
+ * Created on 2018/03/05
  */
 class After18ActionScript implements ActionScript {
     @Override

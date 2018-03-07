@@ -3,7 +3,7 @@ package com.grule.core.condition;
 import com.grule.core.Unit;
 
 /**
- * Created by  on 2017/8/11.
+ * Created on 2018/03/05.
  */
 public interface Condition extends Unit {
 

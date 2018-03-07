@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.retry.annotation.EnableRetry;
 
 /**
- * Created by  on 2017/8/11.
+ * Created on 2018/03/05.
  */
 @SpringBootApplication(scanBasePackages = "com.grule")
 @EnableAutoConfiguration

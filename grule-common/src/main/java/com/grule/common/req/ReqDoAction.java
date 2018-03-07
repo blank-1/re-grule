@@ -3,7 +3,7 @@ package com.grule.common.req;
 import java.io.Serializable;
 
 /**
- * Created by  on 2017/8/15.
+ * Created on 2018/03/05
  */
 public class ReqDoAction implements Serializable {
     private static final long serialVersionUID = -7813629872944239583L;

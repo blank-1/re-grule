@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by  on 2017/8/15.
+ * Created on 2018/03/05
  */
 //@Configuration
 public class ViewConfig {

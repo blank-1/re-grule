@@ -1,7 +1,7 @@
 package com.grule.core.exception;
 
 /**
- * Created by  on 2017/8/11.
+ * Created on 2018/03/05.
  */
 public class AutoConfigException extends Exception {
 

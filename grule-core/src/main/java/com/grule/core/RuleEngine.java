@@ -6,7 +6,7 @@ import com.grule.core.exception.UnitRunException;
 import org.apache.commons.lang3.StringUtils;
 
 /**
- * Created by  on 2017/8/11.
+ * Created on 2018/03/05.
  */
 public class RuleEngine {
     private static RuleEngine sharedInstance = new RuleEngine();
