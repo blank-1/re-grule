@@ -17,8 +17,8 @@ public class RuleEngineTest {
     @Test
     public void testAge() {
 
-        String conditionScript = "package com.regel.core.script.groovy;\n" +
-                "import Context;\n" +
+        String conditionScript = "package com.grule.core.script.groovy;\n" +
+                "import com.grule.core.context.Context;\n" +
                 "\n" +
                 "class AgeConditionSctipt implements ConditionScript {\n" +
                 "    @Override\n" +
@@ -31,8 +31,8 @@ public class RuleEngineTest {
                 "    }\n" +
                 "}";
 
-        String trueActionScript = "package com.regel.core.script.groovy;\n" +
-                "import Context;\n" +
+        String trueActionScript = "package com.grule.core.script.groovy;\n" +
+                "import com.grule.core.context.Context;\n" +
                 "\n" +
                 "class After18ActionScript implements ActionScript {\n" +
                 "    @Override\n" +
@@ -44,8 +44,8 @@ public class RuleEngineTest {
                 "    }\n" +
                 "}\n";
 
-        String falseActionScript = "package com.regel.core.script.groovy;\n" +
-                "import Context;\n" +
+        String falseActionScript = "package com.grule.core.script.groovy;\n" +
+                "import com.grule.core.context.Context;\n" +
                 "\n" +
                 "class Before18ActionScript implements ActionScript {\n" +
                 "    @Override\n" +
