@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * Created by  on 2017/8/15.
  */
 @Service
-public class MemaryScriptLoader implements ScriptLoader {
+public class MemoryScriptLoader implements ScriptLoader {
 
     private Map<String, String> map = new ConcurrentHashMap<>();
 
