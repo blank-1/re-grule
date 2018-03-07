@@ -23,7 +23,7 @@ import javax.annotation.Resource;
  */
 @Controller
 @RequestMapping("/")
-public class RegelController {
+public class GruleController {
 
     @Resource
     private ScriptLoader scriptLoader;
