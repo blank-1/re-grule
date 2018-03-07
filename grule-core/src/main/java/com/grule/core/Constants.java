@@ -9,7 +9,7 @@ public interface Constants {
 
     public static final String JSON_FIELDNAME_CLASS = "class"; // Java 类名
 
-    public static final String JSON_FIELDNAME_FIELDS = "fields"; //
+    public static final String JSON_FIELDNAME_FIELDS = "fields";
 
     public static final String JSON_FIELDNAME_ACTION_UNIT = "unit"; // action 执行单元
 
