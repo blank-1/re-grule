@@ -37,7 +37,7 @@ public class RuleEngineActionScript {
 
     @Test
     public void testRunGroovy() throws IOException {
-        String conditionScript = "import Context\n" +
+        String conditionScript = "import com.grule.core.context.Context;\n" +
                 "class TestCondition {\n" +
                 "    boolean run(Context contex) {\n" +
                 "\t\tcontex.put(\"ConditionScript\", \"hello\")\n" +
@@ -45,7 +45,7 @@ public class RuleEngineActionScript {
                 "\t\treturn true\n" +
                 "\t}\n" +
                 "}";
-        String actionScript = "import Context\n" +
+        String actionScript = "import com.grule.core.context.Context;\n" +
                 "import static org.junit.Assert.*;\n" +
                 "class TestAction {\n" +
                 "    void run(Context context) {\n" +
