@@ -31,6 +31,11 @@ public interface ScriptLoader {
      */
     public boolean remove(String name);
 
+    /**
+     * 获取所有脚本
+     *
+     * @return
+     */
     public Map<String, String> getAll();
 
 
