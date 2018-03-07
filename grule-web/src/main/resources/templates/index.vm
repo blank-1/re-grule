@@ -6,10 +6,6 @@
 
 <h2>插入测试脚本</h2>
 <table>
-    <tr>
-        <td>name</td>
-        <td>id</td>
-    </tr>
     #foreach($name in ${scripts.keySet()})
         <tr>
             <td>$name</td>
@@ -19,40 +15,40 @@
 </table>
 
 <div>
-    script name
-    <input type="text" name="name" id="name"/>
-    groovy代码
-    <textarea type="text" name="script" id="script"/>
+    script name<br>
+    <input type="text" name="name" id="name"/><br>
+    groovy代码<br>
+    <textarea type="text" name="script" id="script"></textarea><br>
     <button id="putScript">提交</button>
 </div>
 
 
 <div>
     <input id="getOne"></input>
-    <button id="getOneButton">读取一个</button>
-    <p><pre style="font-size: large;color: dodgerblue" id="scriptContent"></pre></p>
+    <button id="getOneButton">读取一个</button><br>
+    <p><pre style="font-size: large;color: dodgerblue" id="scriptContent"/></p>
 </div>
 
 <h2>执行测试脚本</h2>
 
 <div>
 
-    用户名
-    <input type="text" name="userName" id="userName"/>
-    想干嘛
-    <input type="text" name="will" id="will"/>
-    年龄
-    <input type="text" name="age" id="age"/>
+    name
+    <input type="text" name="userName" id="userName"/><br>
+    will
+    <input type="text" name="will" id="will"/><br>
+    age
+    <input type="text" name="age" id="age"/><br>
     condition
-    <input type="text" name="condition" id="condition"/>
+    <input type="text" name="condition" id="condition"/><br>
     trueAction
-    <input type="text" name="trueAction" id="trueAction"/>
+    <input type="text" name="trueAction" id="trueAction"/><br>
     falseAction
-    <input type="text" name="falseAction" id="falseAction"/>
+    <input type="text" name="falseAction" id="falseAction"/><br>
     switchAction
-    <input type="text" name="switchAction" id="switchAction"/>
+    <input type="text" name="switchAction" id="switchAction"/><br>
 
-    <button id="doAction">执行命令</button>
+    <button id="doAction">执行命令</button><br>
 
     <p style="font-size: large;color: red" id="actionResult"></p>
 
