@@ -5,7 +5,7 @@ import java.util.Map;
 /**
  * Created by  on 2017/8/15.
  */
-public class MysqlScriptLoader implements ScriptLoader {
+public class MySqlScriptLoader implements ScriptLoader {
 
     @Override
     public String get(String name) {
