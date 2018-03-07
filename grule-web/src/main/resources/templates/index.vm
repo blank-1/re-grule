@@ -24,8 +24,8 @@
 
 
 <div>
-    <input id="getOne"></input>
-    <button id="getOneButton">读取一个</button><br>
+    <input id="getOne"></input><br>
+    <button id="getOneButton">读取</button><br>
     <p><pre style="font-size: large;color: dodgerblue" id="scriptContent"/></p>
 </div>
 
