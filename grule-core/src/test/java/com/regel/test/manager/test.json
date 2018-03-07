@@ -1,0 +1,9 @@
+{
+  "type": "condition",
+  "class": "com.regel.test.condition.ConditionTest.class",
+  "trueUnit": {
+    "class": "com.regel.test.action.ActionTest.class"
+  },
+  "falseUnit": {
+  }
+}

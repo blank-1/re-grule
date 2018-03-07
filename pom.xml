@@ -9,12 +9,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>regel-core</module>
-        <module>regel-web</module>
-        <module>regel-common</module>
+        <module>grule-core</module>
+        <module>grule-web</module>
+        <module>grule-common</module>
     </modules>
     <packaging>pom</packaging>
-    <name>regel</name>
+    <name>re-grule</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
