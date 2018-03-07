@@ -22,7 +22,7 @@
     script name
     <input type="text" name="name" id="name"/>
     groovy代码
-    <textarea type="text" name="script" id="script"></textarea>
+    <textarea type="text" name="script" id="script"/>
     <button id="putScript">提交</button>
 </div>
 
@@ -30,9 +30,7 @@
 <div>
     <input id="getOne"></input>
     <button id="getOneButton">读取一个</button>
-    <p>
-    <pre style="font-size: large;color: dodgerblue" id="scriptContent"></pre>
-    </p>
+    <p><pre style="font-size: large;color: dodgerblue" id="scriptContent"></pre></p>
 </div>
 
 <h2>执行测试脚本</h2>
