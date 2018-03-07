@@ -18,7 +18,7 @@
     script name<br>
     <input type="text" name="name" id="name"/><br>
     groovy code<br>
-    <textarea type="text" name="script" id="script"></textarea><br>
+    <textarea type="text" name="script" id="script"  rows="20"></textarea><br>
     <button id="putScript">提交</button>
 </div>
 
