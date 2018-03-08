@@ -40,7 +40,7 @@ public class RuleEngineTest {
                 "        String name = (String) context.get(\"name\");\n" +
                 "        String will = (String) context.get(\"will\");\n" +
                 "        System.out.println(\"老司机开车进行中\");\n" +
-                "        System.out.println(name + \" is old enough to \" + will);\n" +
+                "        System.out.println(name + \" is ok enough to \" + will);\n" +
                 "    }\n" +
                 "}\n";
 
@@ -53,7 +53,7 @@ public class RuleEngineTest {
                 "        String name = (String) context.get(\"name\");\n" +
                 "        String will = (String) context.get(\"will\");\n" +
                 "        System.out.println(\"滴！学生卡，请下车～～～～\");\n" +
-                "        System.out.println(name + \" is to young to \" + will);\n" +
+                "        System.out.println(name + \" is too young to \" + will);\n" +
                 "    }\n" +
                 "}\n";
 
@@ -68,7 +68,11 @@ public class RuleEngineTest {
         Context context = new ConcurrentContext();
         context.put("age", 16);
         context.put("name", "leo");
-        context.put("will", "在1024");
+        context.put("will", "小屁孩推车");
+        RuleEngine.getInstance().setEntry(condition).start(context);
+        context.put("age", 20);
+        context.put("name", "lee");
+        context.put("will", "老司机开车");
         RuleEngine.getInstance().setEntry(condition).start(context);
 
     }
