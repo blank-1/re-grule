@@ -56,23 +56,24 @@ public class RuleEngineTest {
                 "        System.out.println(name + \" is too young to \" + will);\n" +
                 "    }\n" +
                 "}\n";
-
+        //先决条件
         Condition condition = new GroovyCondition(conditionScript);
-
+        //执行动作
         GroovyAction trueAction = new GroovyAction(trueActionScript);
         GroovyAction falseAction = new GroovyAction(falseActionScript);
-
+        //注册单元
         condition.registerTrueUnit(trueAction);
         condition.registerFalseUnit(falseAction);
-
+        //执行结果
         Context context = new ConcurrentContext();
         context.put("age", 16);
         context.put("name", "leo");
-        context.put("will", "小屁孩推车");
+        context.put("will", "小于18小屁孩推车");
+        //运行脚本
         RuleEngine.getInstance().setEntry(condition).start(context);
         context.put("age", 20);
         context.put("name", "lee");
-        context.put("will", "老司机开车");
+        context.put("will", "大于18老司机开车");
         RuleEngine.getInstance().setEntry(condition).start(context);
 
     }
