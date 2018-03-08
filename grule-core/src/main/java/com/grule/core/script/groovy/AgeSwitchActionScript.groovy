@@ -12,10 +12,10 @@ class AgeSwitchActionScript implements ActionScript {
         int age = context.get("age");
         switch (age) {
             case 18:
-                println("刚好18岁")
+                println("18")
                 break
             case 16:
-                println("刚好16岁,too young")
+                println("16,too young")
                 break
             case 13:
                 println("13 is not ok")

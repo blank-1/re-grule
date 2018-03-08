@@ -68,7 +68,7 @@ public class RuleEngineTest {
         Context context = new ConcurrentContext();
         context.put("age", 16);
         context.put("name", "leo");
-        context.put("will", "小于18小屁孩推车");
+        context.put("will", "小于18小屁孩推车 ");
         //运行脚本
         RuleEngine.getInstance().setEntry(condition).start(context);
         context.put("age", 20);

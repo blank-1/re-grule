@@ -34,7 +34,7 @@ public class GruleController {
         if (putScript == null) {
             return false;
         }
-        scriptLoader.put(putScript.getName(), putScript.getScript());
+        scriptLoader.put(putScript.getName().trim(), putScript.getScript());
         return true;
     }
 
@@ -47,7 +47,7 @@ public class GruleController {
     @RequestMapping("getScript")
     @ResponseBody
     public String getScript(@RequestParam String name) {
-        return scriptLoader.get(name);
+        return scriptLoader.get(name.trim());
     }
 
 
