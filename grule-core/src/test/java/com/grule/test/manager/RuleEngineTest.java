@@ -39,7 +39,7 @@ public class RuleEngineTest {
                 "    void run(Context context) {\n" +
                 "        String name = (String) context.get(\"name\");\n" +
                 "        String will = (String) context.get(\"will\");\n" +
-                "        System.out.println(\"老司机开车进行中\");\n" +
+                "        System.out.println(\"滴！市民卡，请上车～～～～\");\n" +
                 "        System.out.println(name + \" is ok enough to \" + will);\n" +
                 "    }\n" +
                 "}\n";
