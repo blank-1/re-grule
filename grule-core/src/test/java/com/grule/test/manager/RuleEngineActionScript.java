@@ -7,7 +7,7 @@ import com.grule.core.action.GroovyAction;
 import com.grule.core.condition.AbstractCondition;
 import com.grule.core.condition.Condition;
 import com.grule.core.condition.GroovyCondition;
-import com.grule.core.context.SimpleContext;
+import com.grule.core.context.ConcurrentContext;
 import com.grule.core.exception.AutoConfigException;
 import com.grule.test.action.ActionTest;
 import com.grule.test.condition.ConditionTest;
@@ -32,7 +32,7 @@ public class RuleEngineActionScript {
         condition.registerTrueUnit(action);
         when(condition.getResult()).thenReturn(true);
 
-        RuleEngine.getInstance().setEntry(condition).start(new SimpleContext());
+        RuleEngine.getInstance().setEntry(condition).start(new ConcurrentContext());
     }
 
     @Test
@@ -58,13 +58,13 @@ public class RuleEngineActionScript {
 
         condition.registerTrueUnit(action);
 
-        RuleEngine.getInstance().setEntry(condition).start(new SimpleContext());
+        RuleEngine.getInstance().setEntry(condition).start(new ConcurrentContext());
     }
 
     @Test
     public void testJSONConfigRun() throws AutoConfigException {
         String json = "{\"type\":\"condition\",\"class\":\"" + ConditionTest.class.getName() + "\",\"trueUnit\":{\"type\":\"action\",\"class\":\"" + ActionTest.class.getName() + "\"}}";
-        RuleEngine.getInstance().config(json).start(new SimpleContext());
+        RuleEngine.getInstance().config(json).start(new ConcurrentContext());
     }
 
 }

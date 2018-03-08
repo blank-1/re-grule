@@ -7,7 +7,7 @@ import com.grule.core.action.GroovyAction;
 import com.grule.core.condition.Condition;
 import com.grule.core.condition.GroovyCondition;
 import com.grule.core.context.Context;
-import com.grule.core.context.SimpleContext;
+import com.grule.core.context.ConcurrentContext;
 import com.grule.core.script.loader.ScriptLoader;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -67,7 +67,7 @@ public class GruleController {
         trueAction.registerUnit(switchAction);
         falseAction.registerUnit(switchAction);
 
-        Context<String> context = new SimpleContext();
+        Context<String> context = new ConcurrentContext();
         context.put("age", reqDoAction.getAge());
         context.put("name", reqDoAction.getName());
         context.put("will", reqDoAction.getWill());

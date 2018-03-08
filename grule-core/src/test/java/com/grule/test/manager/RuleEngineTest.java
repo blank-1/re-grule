@@ -5,7 +5,7 @@ import com.grule.core.action.GroovyAction;
 import com.grule.core.condition.Condition;
 import com.grule.core.condition.GroovyCondition;
 import com.grule.core.context.Context;
-import com.grule.core.context.SimpleContext;
+import com.grule.core.context.ConcurrentContext;
 import org.junit.Test;
 
 /**
@@ -65,7 +65,7 @@ public class RuleEngineTest {
         condition.registerTrueUnit(trueAction);
         condition.registerFalseUnit(falseAction);
 
-        Context context = new SimpleContext();
+        Context context = new ConcurrentContext();
         context.put("age", 16);
         context.put("name", "leo");
         context.put("will", "在1024");

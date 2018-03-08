@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class GroovyClassUtil {
     /**
-     * 简单缓存类对象
+     * 缓存类对象
      */
     private static final Map<String, Class> CLASS_MAP = new ConcurrentHashMap<>();
 
