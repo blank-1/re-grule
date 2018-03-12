@@ -1,8 +1,9 @@
-package com.grule.core;
+package com.grule.core.util;
 
 import com.alibaba.fastjson.JSONObject;
 import com.grule.core.action.Action;
 import com.grule.core.condition.Condition;
+import com.grule.core.condition.Unit;
 import org.apache.commons.lang3.StringUtils;
 
 import java.lang.reflect.Field;
@@ -10,7 +11,7 @@ import java.lang.reflect.Field;
 /**
  * Created on 2018/03/05.
  */
-class JSONConfigHelper {
+public class JSONConfigHelper {
 
     private static Unit parseLoop(JSONObject jo) throws ClassNotFoundException, IllegalAccessException, InstantiationException {
         Unit unit = null;

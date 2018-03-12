@@ -1,7 +1,8 @@
-package com.grule.core.script.groovy
+package com.grule.test.groovy
 
 import com.grule.core.context.Context
 import com.grule.core.exception.UnitRunException
+import com.grule.core.script.groovy.ActionScript
 
 /**
  * Created on 2018/03/05

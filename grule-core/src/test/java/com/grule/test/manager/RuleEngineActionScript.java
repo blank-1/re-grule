@@ -1,6 +1,6 @@
 package com.grule.test.manager;
 
-import com.grule.core.RuleEngine;
+import com.grule.core.manager.RuleEngine;
 import com.grule.core.action.AbstractAction;
 import com.grule.core.action.Action;
 import com.grule.core.action.GroovyAction;

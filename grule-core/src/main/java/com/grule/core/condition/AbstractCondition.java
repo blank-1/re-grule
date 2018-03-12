@@ -1,7 +1,5 @@
 package com.grule.core.condition;
 
-import com.grule.core.Unit;
-
 /**
  * Created on 2018/03/05.
  */

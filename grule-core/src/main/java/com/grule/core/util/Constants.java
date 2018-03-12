@@ -1,4 +1,4 @@
-package com.grule.core;
+package com.grule.core.util;
 
 /**
  * Created on 2018/03/05.

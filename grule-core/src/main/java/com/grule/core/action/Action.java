@@ -1,6 +1,6 @@
 package com.grule.core.action;
 
-import com.grule.core.Unit;
+import com.grule.core.condition.Unit;
 
 /**
  * Created on 2018/03/05.

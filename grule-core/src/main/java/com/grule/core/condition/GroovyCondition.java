@@ -1,7 +1,7 @@
 package com.grule.core.condition;
 
 import com.grule.core.manager.GroovyClassUtil;
-import com.grule.core.Constants;
+import com.grule.core.util.Constants;
 import com.grule.core.context.Context;
 import com.grule.core.exception.UnitRunException;
 import com.grule.core.manager.GroovyManager;

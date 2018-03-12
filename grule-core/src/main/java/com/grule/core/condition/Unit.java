@@ -1,4 +1,4 @@
-package com.grule.core;
+package com.grule.core.condition;
 
 import com.grule.core.context.Context;
 import com.grule.core.exception.UnitRunException;

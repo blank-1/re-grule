@@ -3,7 +3,7 @@ package com.grule.core.action;
 import com.grule.core.context.Context;
 import com.grule.core.manager.GroovyClassUtil;
 import com.grule.core.manager.GroovyManager;
-import com.grule.core.Constants;
+import com.grule.core.util.Constants;
 import com.grule.core.exception.UnitRunException;
 
 import java.io.File;

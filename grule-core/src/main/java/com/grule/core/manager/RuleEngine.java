@@ -1,15 +1,17 @@
-package com.grule.core;
+package com.grule.core.manager;
 
 import com.grule.core.context.Context;
 import com.grule.core.exception.AutoConfigException;
 import com.grule.core.exception.UnitRunException;
+import com.grule.core.condition.Unit;
+import com.grule.core.util.JSONConfigHelper;
 import org.apache.commons.lang3.StringUtils;
 
 /**
  * Created on 2018/03/05.
  */
 public class RuleEngine {
-    private static RuleEngine sharedInstance = new RuleEngine();
+    private static RuleEngine reInstance = new RuleEngine();
 
     /**
      * 获取规则引擎实例
@@ -17,7 +19,7 @@ public class RuleEngine {
      * @return 规则引擎共享实例
      */
     public static RuleEngine getInstance() {
-        return sharedInstance;
+        return reInstance;
     }
 
     private Unit entry;
